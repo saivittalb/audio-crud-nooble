@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "95124e79-bb78-4d1f-85fa-0e875dd97f1a",
+		"name": "Nooble Assignment CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a new short",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"sample title\",\n    \"description\": \"sample description\",\n    \"category\": \"sample category\",\n    \"audiofile\": \"sample_audio.mp3\",\n    \"creatorname\": \"sample name\",\n    \"creatoremail\": \"sample@email.com\",\n    \"date\": \"2021-03-11\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/newshort",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"newshort"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a short",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/short/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"short",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all shorts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/shorts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"shorts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a short",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"sample title update\",\n    \"description\": \"sample description update\",\n    \"category\": \"sample category\",\n    \"audiofile\": \"sample_audio.mp3\",\n    \"creatorname\": \"sample name\",\n    \"creatoremail\": \"sample@email.com\",\n    \"date\": \"2021-03-11\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/shorts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"shorts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a short",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/deleteshort/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"deleteshort",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
